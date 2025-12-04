@@ -1,0 +1,23 @@
+productName: Electron Application
+appId: electron-application
+copyright: Reproduction Repos ACME Corp. All rights reserved.
+win:
+  target:
+    - zip
+linux:
+  target:
+    - zip
+  category: Science
+asar: false
+directories:
+  output: ../dist/electron-app
+files:
+  - from: .
+    to: .
+    filter:
+      - '*.json'
+  - from: ../dist/app
+    to: .
+    filter:
+      - '*.js'
+      - '*.html'
